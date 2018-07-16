@@ -25,7 +25,7 @@ Tested on the following environment:
 Create a Linux Conda environment with **CPU** backend and upgrade tensorflow:
 
 ``` batch
-conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm
+conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm pillow matplotlib
 conda activate face-generation-project
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.8.0-cp36-cp36m-linux_x86_64.whl
 python -m ipykernel install --user --name face-generation-project --display-name "face-generation-project"
@@ -34,12 +34,12 @@ python -m ipykernel install --user --name face-generation-project --display-name
 Create a Linux Conda environment with **GPU** backend and upgrade tensorflow:
 
 ``` batch
-conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm
+conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm pillow matplotlib
 conda activate face-generation-project
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.8.0-cp36-cp36m-linux_x86_64.whl
 python -m ipykernel install --user --name face-generation-project --display-name "face-generation-project"
 ```
-
+conda
 #### Setup Windows
 
 Tested on the following environment:
@@ -52,7 +52,7 @@ Tested on the following environment:
 Create a Windows Conda environment with **CPU** backend and upgrade tensorflow:
 
 ``` batch
-conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm tensorflow
+conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm pillow matplotlib tensorflow 
 conda activate face-generation-project
 python -m ipykernel install --user --name face-generation-project --display-name "face-generation-project"
  ```
@@ -60,7 +60,7 @@ python -m ipykernel install --user --name face-generation-project --display-name
 Create a Windows Conda environment with **GPU** backend and upgrade tensorflow:
 
 ``` batch
-conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm tensorflow-gpu
+conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm pillow matplotlib tensorflow-gpu
 conda activate face-generation-project
 python -m ipykernel install --user --name face-generation-project --display-name "face-generation-project"
 ```
@@ -74,7 +74,7 @@ Tested on the following environment:
 Create a macOS Conda environment with **CPU** backend and upgrade tensorflow:
 
 ``` batch
-conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm
+conda create --name face-generation-project pip python=3.6 numpy jupyter tqdm pillow matplotlib
 conda activate face-generation-project
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.8.0-py3-none-any.whl
 python -m ipykernel install --user --name face-generation-project --display-name "face-generation-project"
